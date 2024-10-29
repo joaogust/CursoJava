@@ -1,20 +1,18 @@
 package ClassesEObjetos;
 
-import javax.accessibility.AccessibleContext;
-
+@SuppressWarnings("unused")
 public class main {
     public static void main(String[] args) {
-
         Account a = new Account();
-        a.balance = 100;
+        Account b = new Account();
 
-        if(!a.deposit(-100)) {
-            System.out.println("Ops... depósito inválido");
-        }
+        a.deposit(1000);
+        b.deposit(100);
 
-        if(!a.withdraw(100)) {
-            System.out.println("Ops... saque inválido");
-        }
-        a.printBalance();
+        a.transfer(450, b);
+
+        System.out.println("Saldo conta A: R$" + a.balance);
+        System.out.println("Saldo conta B: R$" + b.balance);
+
     }
 }
