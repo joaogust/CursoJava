@@ -6,7 +6,7 @@ public class main {
         Account a = new Account();
         Account b = new Account();
 
-        a.deposit(1000);
+        a.deposit("1000");
         b.deposit(100);
 
         a.transfer(450, b);

@@ -15,6 +15,10 @@ public class Account {
             return false;
         }
     }
+    boolean deposit(String amount) {
+        return deposit(Double.parseDouble(amount));
+    }
+
 
     boolean withdraw(double amount) {
         if(amount > 0 && amount <= balance) {
@@ -26,6 +30,7 @@ public class Account {
             return false;
         }
     }
+
 
     void transfer(double amount, Account targetAccount) {
 
