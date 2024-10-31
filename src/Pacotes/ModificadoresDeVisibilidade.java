@@ -6,7 +6,9 @@ public class ModificadoresDeVisibilidade {
     /*
     public: permite o acesso de qualquer parte do código.
 
-    protected: permite o acesso de classes dentro do mesmo pacote e de subclasses, mesmo que estejam em pacotes diferentes.
+    protected:
+    1. Permite o acesso de classes dentro do mesmo pacote.
+    2. Permite o acesso entre heranças de pacotes diferentes.
 
     default (ou package-private): é o modificador de visibilidade padrão em Java, que é aplicado quando não há um modificador explícito. Esse acesso permite que classes, métodos, ou variáveis sejam acessados apenas por outras classes no mesmo pacote. Classes fora do pacote não conseguem acessar esses membros.
 
