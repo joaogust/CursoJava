@@ -2,6 +2,8 @@ package HerancaEntreClasses;
 
 import ConstruindoEncapsulamento.EncapsulatedAccount;
 
+import java.lang.Override;
+
 @SuppressWarnings("unused")
 public class Account {
 
@@ -76,5 +78,10 @@ public class Account {
 
     public String getAccountOwner() {
         return accountOwner;
+    }
+
+    @Override
+    public String toString() {
+        return accountNumber;
     }
 }
