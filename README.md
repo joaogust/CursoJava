@@ -4,6 +4,8 @@ Este repositório contém todo o conteúdo de código que estou aprendendo no cu
 
 ## Objetivos do Curso
 
+**Link do curso**: https://www.udemy.com/course/java-360-curso-completo-do-zero-ao-avancado-com-projetos/?couponCode=ST21MT121624
+
 - Aprender os conceitos fundamentais da programação em Java.
 - Explorar as principais funcionalidades da linguagem.
 - Aplicar o conhecimento em projetos práticos e desafiadores.
