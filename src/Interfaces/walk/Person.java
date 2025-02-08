@@ -1,6 +1,6 @@
 package Interfaces.walk;
 
-public class Person implements Walkable {
+public class Person implements Walkable, Jumpable{
 
     private int steps;
     private int distancePerStep;
@@ -14,5 +14,11 @@ public class Person implements Walkable {
     @Override
     public void stop() {
         steps = 0;
+    }
+
+    @Override
+    public void jump() {
+        walk();
+        walk();
     }
 }
