@@ -1,20 +1,23 @@
 package Interfaces.walk.Revisao.Encapsulamento;
 
 public class EncapsulatedAccount {
-    private double balance;
-    private String accountNumber;
-    private String accountOwner;
+    private final String accountNumber;
+    private final String accountOwner;
+    private double balance = 0.0;
 
-    private EncapsulatedAccount(String owner, String number, double balance) {
+    private static int currentId = 1;
+
+    public EncapsulatedAccount(String owner) {
         this.accountOwner = owner;
-        this.accountNumber = number;
-        this.balance = balance;
-    }
-    public EncapsulatedAccount(String owner, String number){
-        this(owner, number, 0);
-    }
-    public EncapsulatedAccount(){
-        this(null, null, 0);
+        if(currentId < 10) {
+            accountNumber = "000" + currentId++;
+        } else if (currentId < 100) {
+            accountNumber = "00" + currentId++;
+        } else if (currentId < 1000) {
+            accountNumber = "0" + currentId++;
+        } else {
+            accountNumber = "" + currentId++;
+        }
     }
 
 
@@ -30,21 +33,6 @@ public class EncapsulatedAccount {
         return accountNumber;
     }
 
-    public boolean setAccountOwner(String accountOwner) {
-        if(this.accountOwner == null && !accountOwner.isBlank()) {
-            this.accountOwner = accountOwner;
-            return true;
-        }
-        return false;
-    }
-
-    public boolean setAccountNumber(String accountNumber) {
-        if(this.accountNumber == null && !accountNumber.isEmpty()) {
-            this.accountNumber = accountNumber;
-            return true;
-        }
-        return false;
-    }
 
     public boolean deposit(double amount){
         if(amount >= 0) {
