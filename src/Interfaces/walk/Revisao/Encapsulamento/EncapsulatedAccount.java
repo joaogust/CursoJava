@@ -1,11 +1,18 @@
 package Interfaces.walk.Revisao.Encapsulamento;
 
 public class EncapsulatedAccount {
+    public static final int INITIAL_VALUE = 10;
+
     private final String accountNumber;
     private final String accountOwner;
     private double balance = 0.0;
 
-    private static int currentId = 1;
+    private static int currentId;
+
+    static {
+        System.out.println("Inicializando CurrentID.");
+        currentId = 1;
+    }
 
     public EncapsulatedAccount(String owner) {
         this.accountOwner = owner;
@@ -20,6 +27,9 @@ public class EncapsulatedAccount {
         }
     }
 
+    public static int getCurrentId() {
+        return currentId;
+    }
 
     public double getBalance() {
         return balance;

@@ -17,5 +17,7 @@ public class main {
         System.out.println("Owner: " + a2.getAccountOwner());
         System.out.println("Number: " + a2.getAccountNumber());
         a2.printBalance();
+
+        System.out.println(EncapsulatedAccount.getCurrentId());
     }
 }
