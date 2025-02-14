@@ -11,4 +11,9 @@ public class Cat extends EarthPet {
     public void talk() {
         System.out.println("O gato está miando.");
     }
+
+    @Override
+    public void sleep(int time) {
+        System.out.println("O gato dormiu por " + time + " horas.");
+    }
 }

@@ -25,4 +25,11 @@ public abstract class Pet {
     public int getAmountEaten() {
         return amountEaten;
     }
+
+    public abstract void sleep(int time);
+    /*
+    Colocar abstract na frente de um metodo faz com que não seja necessário
+    aplicar utilidade para o metodo. Isso obriga com que subclasses de Pet
+    sobrescrevam esse metodo.
+     */
 }
