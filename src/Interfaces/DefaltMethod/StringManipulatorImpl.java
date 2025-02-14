@@ -1,6 +1,6 @@
 package Interfaces.DefaltMethod;
 
-public class StringManipulatorImpl implements StringManipulator {
+public class StringManipulatorImpl implements StringManipulator, CharactherChanger {
 
     @Override
     public String add(String a, String b) {
@@ -12,5 +12,8 @@ public class StringManipulatorImpl implements StringManipulator {
         return s.substring(0, n);
     }
 
-
+    @Override
+    public String upper(String s) {
+        return CharactherChanger.super.upper(s);
+    }
 }
