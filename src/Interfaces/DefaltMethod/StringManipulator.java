@@ -14,4 +14,8 @@ public interface StringManipulator {
     interface. Se o 'default' não fosse usado seria necessário criar, em todas as classes que utilizam
     a interface, a aplicação desse mesmo metodo.
      */
+
+    static String lower(String s) {
+        return s.toLowerCase();
+    }
 }

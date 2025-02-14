@@ -6,5 +6,7 @@ public class app {
         System.out.println(s.upper("joão"));
         System.out.println(s.add("A", "na"));
         System.out.println(s.takeFirst("Sophia", 4));
+
+        System.out.println(StringManipulator.lower("JAVA"));
     }
 }

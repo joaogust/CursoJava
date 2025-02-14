@@ -3,9 +3,8 @@ package Interfaces.DefaltMethod;
 public interface CharactherChanger {
 
     default String upper(String s) {
-        return "*" + s.substring(1);
+        return getChar() + s.substring(1);
     }
-
     /*
     Toda vez que aparecer esse problema de ambiguidade, o chamado Diamond Problem, deve-se
     sobrescrever o metodo, chamando qual metodo deve ser chamado, ou mudando o metodo.
@@ -20,5 +19,12 @@ public interface CharactherChanger {
     public String upper(String s) {
         return CharactherChanger.super.upper(s);
     }
+     */
+
+    private char getChar() {
+        return '*';
+    }
+    /*
+    Os metodos privados só podem ser acessados dentro da interface .
      */
 }
