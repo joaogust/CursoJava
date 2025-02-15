@@ -31,5 +31,9 @@ public abstract class Pet {
     Colocar abstract na frente de um metodo faz com que não seja necessário
     aplicar utilidade para o metodo. Isso obriga com que subclasses de Pet
     sobrescrevam esse metodo.
+
+    Metodos abstratos não podem existir em classes não abstratas e classes
+    abstratas podem ter metodos não abstratos.
+
      */
 }
