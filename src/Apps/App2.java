@@ -8,6 +8,11 @@ public class App2 {
 
         Generator generator = new RandomGenerator();
         //Generator generator = new SequenceGenerator();
+        /*
+        Eu chamo o Generator, que é uma interface e instancio um objeto sendo
+        RandomGenerator ou SequenceGenerator, que apresentam o metodo next()
+        de maneiras diferentes.
+         */
 
         Person p1 = new Person(generator);
         System.out.println(p1.getId());
