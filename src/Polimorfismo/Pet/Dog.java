@@ -1,4 +1,4 @@
-package Polimorfismo;
+package Polimorfismo.Pet;
 
 public class Dog extends Pet {
 
