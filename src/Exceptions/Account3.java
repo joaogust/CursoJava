@@ -1,4 +1,4 @@
-package UsandoExceptionsParaComunicarFalhas;
+package Exceptions;
 
     /*
     Enquanto o throw lança e termina o metodo com um comportamento excepcional o throws Exception vai na assinatura

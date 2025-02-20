@@ -1,13 +1,11 @@
-package UsandoExceptionsParaComunicarFalhas;
+package Exceptions;
 
-public class Account1 {
-
-    // Utilizando Magic Numbers
+public class Account4 {
 
     private final String number;
     private double balance;
 
-    public Account1(String number) {
+    public Account4(String number) {
         this.number = number;
     }
 
@@ -19,24 +17,23 @@ public class Account1 {
         return false;
     }
 
-    public int withdraw(double ammount) {
+    public void withdraw(double ammount) throws Exception {
 
-        // Utilizando Magic Numbers
         if(ammount <= 0) {
-            return -1;
+            throw new Exception("Ammount cannot be negative.");
         }
         if(balance < ammount) {
-            return -2;
+            throw new InsufficientFoundsException(balance);
         }
         balance -= ammount;
-        return 1;
     }
 
     @Override
     public String toString() {
-        return "Account1{" +
+        return "Account4{" +
                 "number='" + number + '\'' +
                 ", balance=" + balance +
                 '}';
     }
+
 }

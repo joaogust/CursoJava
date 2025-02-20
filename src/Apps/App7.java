@@ -1,5 +1,5 @@
 package Apps;
-import UsandoExceptionsParaComunicarFalhas.Account1;
+import Exceptions.Account1;
 
 public class App7 {
     public static void main(String[] args) {

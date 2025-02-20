@@ -21,7 +21,7 @@ STACK TRACE:
         - Ela começa de baixo para cima, sendo a última linha o primeiro metodo que estava sendo executado.
     EX:
         Exception in thread "main" java.lang.RuntimeException: Ammount cannot be negative.
-            at UsandoExceptionsParaComunicarFalhas.Account2.withdraw(Account2.java:29)
+            at Exceptions.Account2.withdraw(Account2.java:29)
             at Apps.App8.main(App8.java:15)
 
         Process finished with exit code 1

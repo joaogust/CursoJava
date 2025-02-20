@@ -1,4 +1,4 @@
-package UsandoExceptionsParaComunicarFalhas;
+package Exceptions;
 
 public class InsufficientFoundsException extends Exception{
     private final double currentBalance;

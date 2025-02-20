@@ -1,8 +1,8 @@
 package Apps;
 
-import UsandoExceptionsParaComunicarFalhas.Account2;
-import UsandoExceptionsParaComunicarFalhas.Account3;
-import UsandoExceptionsParaComunicarFalhas.Account4;
+import Exceptions.Account2;
+import Exceptions.Account3;
+import Exceptions.Account4;
 
 /*
     O texto vermelho quanto aparece um erro é chamado de stack trace (rastreio de pilha).

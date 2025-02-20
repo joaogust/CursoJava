@@ -1,4 +1,4 @@
-package UsandoExceptionsParaComunicarFalhas;
+package Exceptions;
 
     /*
     Quando você quer trabalhar com excessões você deve usar as classes Exception ou RuntimeException
