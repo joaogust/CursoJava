@@ -1,13 +1,16 @@
 package UsandoExceptionsParaComunicarFalhas;
 
-public class Account1 {
+    /*
+    Enquanto o throw lança e termina o metodo com um comportamento excepcional o throws Exception vai na assinatura
+    do metodo e diz que ele pode lançar exceções (não obrigatóriamente).
+     */
 
-    // Utilizando Magic Numbers
+public class Account3 {
 
     private final String number;
     private double balance;
 
-    public Account1(String number) {
+    public Account3(String number) {
         this.number = number;
     }
 
@@ -19,24 +22,23 @@ public class Account1 {
         return false;
     }
 
-    public int withdraw(double ammount) {
+    public void withdraw(double ammount) throws Exception {
 
-        // Utilizando Magic Numbers
         if(ammount <= 0) {
-            return -1;
+            throw new Exception("Ammount cannot be negative.");
         }
         if(balance < ammount) {
-            return -2;
+            throw new Exception("Insufficient founds.");
         }
         balance -= ammount;
-        return 1;
     }
 
     @Override
     public String toString() {
-        return "Account1{" +
+        return "Account3{" +
                 "number='" + number + '\'' +
                 ", balance=" + balance +
                 '}';
     }
+
 }

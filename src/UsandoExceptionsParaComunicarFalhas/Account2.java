@@ -1,13 +1,17 @@
 package UsandoExceptionsParaComunicarFalhas;
 
-public class Account1 {
+    /*
+    Quando você quer trabalhar com excessões você deve usar as classes Exception ou RuntimeException
+    e outras subclasses delas.Uma subclasse que herda de Exception é uma classe do tipo Checked exeption, já
+    a que herda do RuntimeException é do tipo Unchecked exeption
+     */
 
-    // Utilizando Magic Numbers
+public class Account2 {
 
     private final String number;
     private double balance;
 
-    public Account1(String number) {
+    public Account2(String number) {
         this.number = number;
     }
 
@@ -19,24 +23,23 @@ public class Account1 {
         return false;
     }
 
-    public int withdraw(double ammount) {
+    public void withdraw(double ammount) {
 
-        // Utilizando Magic Numbers
         if(ammount <= 0) {
-            return -1;
+            throw new RuntimeException("Ammount cannot be negative.");
         }
         if(balance < ammount) {
-            return -2;
+            throw new RuntimeException("Insufficient founds.");
         }
         balance -= ammount;
-        return 1;
     }
 
     @Override
     public String toString() {
-        return "Account1{" +
+        return "Account2{" +
                 "number='" + number + '\'' +
                 ", balance=" + balance +
                 '}';
     }
+
 }
