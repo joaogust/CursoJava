@@ -17,10 +17,10 @@ public class Account4 {
         return false;
     }
 
-    public void withdraw(double ammount) throws Exception {
+    public void withdraw(double ammount) throws InsufficientFoundsException {
 
         if(ammount <= 0) {
-            throw new Exception("Ammount cannot be negative.");
+            throw new RuntimeException("Ammount cannot be negative.");
         }
         if(balance < ammount) {
             throw new InsufficientFoundsException(balance);
