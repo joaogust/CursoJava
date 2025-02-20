@@ -2,6 +2,7 @@ package Apps;
 
 import UsandoExceptionsParaComunicarFalhas.Account2;
 import UsandoExceptionsParaComunicarFalhas.Account3;
+import UsandoExceptionsParaComunicarFalhas.Account4;
 
 /*
     O texto vermelho quanto aparece um erro é chamado de stack trace (rastreio de pilha).
@@ -50,7 +51,16 @@ public class App8 {
         Account3 b = new Account3("008");
         b.deposit(100);
         System.out.println(b);
-        b.withdraw(300); // necessário colocar o throws Exception na frente do main
+        b.withdraw(50); // necessário colocar o throws Exception na frente do main
+
+        System.out.println("--------------------------\n");
+
+        // ---------- AULA 143 ----------//
+
+        Account4 c = new Account4("009");
+        c.deposit(500);
+        System.out.println(c);
+        c.withdraw(600);
 
 
     }
