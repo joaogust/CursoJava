@@ -1,11 +1,11 @@
-package Exceptions;
+package TratandoExceptions;
 
-public class Account4 {
+public class Account1 {
 
     private final String number;
     private double balance;
 
-    public Account4(String number) {
+    public Account1(String number) {
         this.number = number;
     }
 
@@ -20,7 +20,7 @@ public class Account4 {
     public void withdraw(double ammount) throws InsufficientFoundsException {
 
         if(ammount <= 0) {
-            throw new RuntimeException("Ammount cannot be negative.");
+            throw new IllegalArgumentException();
         }
         if(balance < ammount) {
             throw new InsufficientFoundsException(balance);
@@ -37,3 +37,4 @@ public class Account4 {
     }
 
 }
+
