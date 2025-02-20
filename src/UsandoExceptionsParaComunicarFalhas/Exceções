@@ -35,3 +35,24 @@ THROWS:
 
     Enquanto o throw lança e termina o metodo com um comportamento excepcional o throws Exception vai na assinatura
     do metodo e diz que ele pode lançar exceções (não obrigatóriamente).
+
+----------------------------------------------------
+
+CHECKED X UNCHECKED:
+
+    Situações como a de saldo negativo (validação de balance < ammount) as Checked Exceptions são mais interessantes,
+    uma vez que ela força a utilização do throws lá em cima do lado do metodo e quem faz a chamada desse metodo tem que
+    estar ciente de que alguma excessão pode acontecer, obrigando tratá-la ou propagála, utilizando o throws também.
+
+    Já em situações como o ammount sendo negativo (validação de ammount < 0) ocorre, normalmente, em casos onde outros
+    tipos de validação obtiveram erro, podendo ser decorrencia de um bug ao longo do processo. Quando o fato dessa
+    excessão acontecer é porque que aconteceu algum erro em algum outro lugar, a melhor opção é i Unchecked Exceptions.
+
+    Resumo:
+        Checked Exceptions:
+            - Quando você quer obrigar quem chamou tratar. Uma situação que pode acontecer, e se acontecer deve ser
+              tratado por quem chamou.
+
+        Unchecked Exceptions:
+            - Quando é um bug, que ocorreu e que você não espera que seja tratado, uma vez que ele aconteceu por
+              decorrência de um outro problema.
