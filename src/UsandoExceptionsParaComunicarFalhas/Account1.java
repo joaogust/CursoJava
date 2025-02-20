@@ -17,12 +17,17 @@ public class Account1 {
         return false;
     }
 
-    public boolean withdraw(double ammount) {
-        if(ammount > 0 && balance >= ammount) {
-            balance -= ammount;
-            return true;
+    public int withdraw(double ammount) {
+
+        // Utilizando Magic Numbers
+        if(ammount <= 0) {
+            return -1;
         }
-        return false;
+        if(balance < ammount) {
+            return -2;
+        }
+        balance -= ammount;
+        return 1;
     }
 
     @Override

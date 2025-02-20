@@ -14,9 +14,43 @@ public class App7 {
         a.withdraw(500);
         System.out.println(a);
 
-        if(!a.withdraw(600)) {
+        System.out.println("\n--------------------------\n");
+
+        int rc = a.withdraw(600);
+
+        if(rc == -2) {
             System.out.println("ERROR: not enough founds.");
+        } else if(rc == -1) {
+            System.out.println("ERROR: negative amount.");
+        } else if(rc == 1) {
+            System.out.println("SUCCESS!");
+            System.out.println(a);
         }
-        System.out.println(a);
+
+        System.out.println("\n--------------------------\n");
+
+        rc = a.withdraw(-5);
+
+        if(rc == -2) {
+            System.out.println("ERROR: not enough founds.");
+        } else if(rc == -1) {
+            System.out.println("ERROR: negative amount.");
+        } else if(rc == 1) {
+            System.out.println("SUCCESS!");
+            System.out.println(a);
+        }
+
+        System.out.println("\n--------------------------\n");
+
+        rc = a.withdraw(150);
+
+        if(rc == -2) {
+            System.out.println("ERROR: not enough founds.");
+        } else if(rc == -1) {
+            System.out.println("ERROR: negative amount.");
+        } else if(rc == 1) {
+            System.out.println("SUCCESS!");
+            System.out.println(a);
+        }
     }
 }
