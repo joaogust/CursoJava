@@ -20,7 +20,7 @@ public class Account1 {
     public void withdraw(double ammount) throws InsufficientFoundsException {
 
         if(ammount <= 0) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Ammount cannot be negative");
         }
         if(balance < ammount) {
             throw new InsufficientFoundsException(balance);

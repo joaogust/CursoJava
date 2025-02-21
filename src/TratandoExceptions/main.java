@@ -7,14 +7,34 @@ public class main {
         a.deposit(300);
 
         try {
-            a.withdraw(600);
+            a.withdraw(-600);
             System.out.println(a);
+//        } catch (InsufficientFoundsException e) {
+//            System.out.println("ERROR: " + e.getMessage());
+//            System.out.println("Stacktrace: ");
+//            e.printStackTrace();
+//
+//        } catch (IllegalArgumentException e) {
+//            System.out.println("ERROR: " + e.getMessage());
+//            System.out.println("Stacktrace: ");
+//            e.printStackTrace();
+//        }
+        } catch (InsufficientFoundsException | IllegalArgumentException e) {
+            System.out.println("ERROR: " + e.getMessage());
+            System.out.println("Stacktrace: ");
+            e.printStackTrace();
+        }
 
-        } catch (InsufficientFoundsException e) {
-            System.out.println("Ops... pouco dinheiro, só contém R$" + e.getCurrentBalance());
+        Account1 b = null;
 
-        } catch (IllegalArgumentException e) {
-            System.out.println("Ops... o valor não pode ser negativo.");
+        try {
+            b.deposit(500);
+            System.out.println(b);
+        } catch (NullPointerException e) {
+            System.out.println("ERROR: " + e.getMessage());
+            System.out.println("Stacktrace: ");
+            e.printStackTrace();
+            System.out.println("Ops... instância nula.");
         }
 
         System.out.println("THE END.");
