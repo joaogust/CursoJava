@@ -1,4 +1,4 @@
-package Strings;
+package Strings.Métodos;
 
 public class StringSubstring {
 
