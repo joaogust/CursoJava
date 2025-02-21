@@ -10,7 +10,16 @@ public class AccountService {
         try{
             account.withdraw(ammont);
         } catch (InsufficientFoundsException e) {
-            throw new ServiceException(e.getMessage());
+            throw new ServiceException("Error during withdraw.", e);
         }
+
+        /* Nunca engula uma excessão, deixando o catch sem nenhum conteúdo
+        EX:
+            try{
+                account.withdraw(ammont);
+            } catch (InsufficientFoundsException e) {
+
+            }
+        */
     }
 }
