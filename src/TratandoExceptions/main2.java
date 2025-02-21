@@ -3,6 +3,7 @@ package TratandoExceptions;
 public class main2 {
     public static void main(String[] args) {
 
+        // -------------- Aula 149 -------------- //
         Account1 a = new Account1("1234");
         a.deposit(500);
         System.out.println(a);
@@ -24,5 +25,24 @@ public class main2 {
         "é um" Exception, ele herda de Exception.
          */
         System.out.println("THE END.");
+
+        // -------------- Aula 150 -------------- //
+
+        System.out.println("\n\n");
+
+        Account1 b = new Account1("1234");
+        a.deposit(500);
+        System.out.println(b);
+
+        try {
+            a.withdraw(600);
+            System.out.println(a);
+
+        } catch (InsufficientFoundsException e) {
+            System.out.println("Não há saldo.");
+
+        } finally { // Esse bloco sempre é executado
+            System.out.println("THE END");
+        }
     }
 }
