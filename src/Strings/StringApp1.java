@@ -2,6 +2,7 @@ package Strings;
 
 public class StringApp1 {
     public static void main(String[] args) {
+        // ------------- Aula 157 ------------- //
         String s1 = "A";
         String s2 = "B";
         String s3 = "B"; // está dentro do pool
