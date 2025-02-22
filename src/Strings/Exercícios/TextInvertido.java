@@ -1,6 +1,6 @@
-package Strings;
+package Strings.Exercícios;
 
-public class ExercícioTxtInvertido {
+public class TextInvertido {
 
     public static void main(String[] args) {
 
