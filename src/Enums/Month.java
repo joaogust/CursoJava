@@ -29,6 +29,14 @@ public enum Month {
         return MonthNum;
     }
 
+    public int numberOfDays() {
+        return switch (this) {
+            case JANUARY, MARCH, MAY, JULY, AUGUST, OCTOBER, DECEMBER -> 31;
+            case APRIL, JUNE, SEPTEMBER, NOVEMBER -> 30;
+            case FEBRUARY -> 28;
+        };
+    }
+
     @Override
     public String toString() {
         return "NAME: " + name();
