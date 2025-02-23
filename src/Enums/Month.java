@@ -1,5 +1,10 @@
 package Enums;
 
+/*
+    - todos enum no java é uma Month
+    - Não é permitido criar subclasses do enum
+ */
+
 public enum Month {
     JANUARY(1),
     FEBRUARY(2),
@@ -24,4 +29,8 @@ public enum Month {
         return MonthNum;
     }
 
+    @Override
+    public String toString() {
+        return "NAME: " + name();
+    }
 }
