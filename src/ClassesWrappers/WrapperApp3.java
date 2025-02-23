@@ -1,6 +1,6 @@
 package ClassesWrappers;
 
-public class WrappedApp3 {
+public class WrapperApp3 {
 
     public static void main(String[] args) {
 
