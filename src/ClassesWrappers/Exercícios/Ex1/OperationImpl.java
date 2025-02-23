@@ -4,6 +4,7 @@ public class OperationImpl implements Operation{
 
     @Override
     public Integer execute(Integer n1, Integer n2) {
+        // if ternário
         n1 = n1 == null ? 0 : n1;
         n2 = n2 == null ? 0 : n2;
         return n1 + n2;
