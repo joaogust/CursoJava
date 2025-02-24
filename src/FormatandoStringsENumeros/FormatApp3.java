@@ -16,10 +16,10 @@ public class FormatApp3 {
 
         NumberFormat nf = NumberFormat.getInstance(locale);
         String formatted = nf.format(n);
-        System.out.println(formatted + " > Padrão pt-BR");
+        System.out.println(formatted + " -> Padrão pt-BR");
 
         nf = NumberFormat.getInstance();
         formatted = nf.format(n);
-        System.out.println(formatted + " > Padrão Java");
+        System.out.println(formatted + " -> Padrão Java");
     }
 }
