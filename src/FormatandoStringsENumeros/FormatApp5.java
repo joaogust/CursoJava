@@ -11,7 +11,7 @@ public class FormatApp5 {
         double n = 1984.02;
 
         Locale locale = new Locale("pt", "BR");
-        NumberFormat nf = NumberFormat.getCurrencyInstance();
+        NumberFormat nf = NumberFormat.getCurrencyInstance(locale);
 
         String formatted = nf.format(n);
         System.out.printf("%s -> pt-BR\n", formatted);
