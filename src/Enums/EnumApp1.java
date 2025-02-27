@@ -12,5 +12,7 @@ public class EnumApp1 {
         Month firstMonth = Month.JANUARY;
         Month noMonth = null;
 //        Month testMonth = Month.SOMETHING;
+
+
     }
 }
