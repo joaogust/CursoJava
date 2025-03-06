@@ -24,7 +24,7 @@ public class FormatApp5 {
         formatted = nf.format(n);
         System.out.printf("%s -> pt-BR\n", formatted);
 
-        nf.setCurrency(Currency.getInstance("EUR")); // muda a moeda
+            nf.setCurrency(Currency.getInstance("EUR")); // muda a moeda
         nf.setMinimumFractionDigits(2);
         formatted = nf.format(n);
         System.out.printf("%s -> Euro\n", formatted);
