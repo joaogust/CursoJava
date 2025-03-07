@@ -7,9 +7,20 @@ public class RegexApp1 {
 
     public static void main(String[] args) {
 
-        String text = "abcabc";
-        String regex = "a";
+        printMatches("sgoj32jso2", "\\d");
+        System.out.println();
 
+        printMatches("sgoj320jso2", "\\d\\d\\d");
+        System.out.println();
+
+        printMatches("sdf342jafwe82njk1", "([a-z])+");
+        System.out.println();
+
+        printMatches("sdf342jafwe82njk1", "\\d([a-z])+");
+        System.out.println();
+    }
+
+    public static void printMatches(String text, String regex) {
         Pattern p = Pattern.compile(regex);
         Matcher m = p.matcher(text);
 
