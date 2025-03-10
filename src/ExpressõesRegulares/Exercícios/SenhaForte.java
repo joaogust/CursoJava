@@ -21,10 +21,10 @@ public class SenhaForte {
             String senha = scanner.nextLine();
 
             if(validarSenha(senha)) {
-                System.out.println("Senha válida.");
+                System.out.println("Senha forte.");
                 return;
             } else {
-                System.out.println("Senha inválida.");
+                System.out.println("Senha fraca.");
             }
         }
     }
