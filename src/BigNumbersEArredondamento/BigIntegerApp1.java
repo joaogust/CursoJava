@@ -12,7 +12,7 @@ public class BigIntegerApp1 {
         // Os objetos BigInteger são imultáveis
         big = big.add(BigInteger.TEN);
         System.out.println(big.longValue());
-        // Como o valor não cabe dentro de um int ele vai printar um valor incorreto
+        // Como o valor não cabe dentro de um long ele vai printar um valor incorreto
 
         System.out.println(big);
 
