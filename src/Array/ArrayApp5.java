@@ -33,6 +33,10 @@ public class ArrayApp5 {
         System.out.println(prefix);
         int soma = 0;
 
+//        for(int i = 0; i < array.length; i++) {
+//            soma += array[i];
+//        }
+
         for (int n: array) {
             soma += n;
         }

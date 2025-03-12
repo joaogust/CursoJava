@@ -11,7 +11,8 @@ public class ArrayApp4 {
             System.out.printf("%d -> %d\n", i, primeNumbers[i]);
         }
 
-        for (int i: primeNumbers) {
+        // Enhanced for
+        for (int i : primeNumbers) {
             System.out.printf("-> %d\n", i);
         }
     }
