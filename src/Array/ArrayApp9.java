@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ArrayApp9 {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         var array = new String[5];
 
