@@ -3,7 +3,7 @@ package Listas;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListasApp2 {
+public class ListApp2 {
 
     public static void main(String[] args) {
         // --------------- Listas Imultáveis --------------- //
