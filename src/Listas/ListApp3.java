@@ -18,7 +18,7 @@ public class ListApp3 {
 
         Iterator<String> iter = list.iterator();
         /*
-        Toda lista de objetos em java tem o metodo interator que percorre a lista.
+        Todos obojetos que armazenam uma série de elementos, como listas, de objetos em java tem o metodo interator que percorre a lista.
          */
         while (iter.hasNext()) {
             String s = iter.next();
