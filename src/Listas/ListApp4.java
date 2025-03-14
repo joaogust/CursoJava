@@ -3,7 +3,7 @@ package Listas;
 import java.util.Arrays;
 import java.util.List;
 
-public class ListaApp4 {
+public class ListApp4 {
 
     public static void main(String[] args) {
         // ------------- Conversão de arrays e listas ------------- //
