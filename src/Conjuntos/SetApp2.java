@@ -23,6 +23,15 @@ public class SetApp2 {
         * Equals
             O equals é um metodo da classe Object que compara o endereço de memória, se os objetos são os mesmos!
             Como o a2 e a3 são objetos diferentes ele não reconheceu igualdade pelo equals.
+
+        * HashCode
+            Hash significa espalhamento, e esse metodo está muito ligado ao equals, quando você coloca um tem que
+            colocar o outro. Os mesmos atributos para verificar igualdade no equals devem ser usados na geração do
+            hashCode, para o retorno de um valor inteiro.
+            Seu objetivo é gerar números diferentes para objetos que são diferentes.
+             - Podem ter casos de gerar números iguais para objetos que são diferentes.
+             - Não podem gerar números diferentes para objetos que são iguais.
+            É basicamente um identificador inteiro de um objeto.
          */
 
         System.out.println();
