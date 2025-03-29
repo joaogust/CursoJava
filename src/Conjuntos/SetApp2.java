@@ -15,6 +15,7 @@ public class SetApp2 {
         for (Account account: accounts) {
             System.out.println(account);
         }
+
         /*
         Se sets não podem ter elementos repetidos como o a3 foi acrescentado no conjunto?
 
