@@ -1,13 +1,14 @@
 package Conjuntos;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public class AccountFail {
+public class AccountOdering implements Comparable<AccountOdering> {
 
     private final String number;
     private final double balance;
 
-    public AccountFail(String number, double balance) {
+    public AccountOdering(String number, double balance) {
         this.number = number;
         this.balance = balance;
     }
@@ -21,17 +22,20 @@ public class AccountFail {
     }
 
     @Override
+    public int compareTo(AccountOdering o) {
+        return this.number.compareTo(o.number); // Ordem alfabética
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        AccountFail accountFail = (AccountFail) o;
-        return Double.compare(balance, accountFail.balance) == 0 && Objects.equals(number, accountFail.number);
+        AccountOdering that = (AccountOdering) o;
+        return Double.compare(balance, that.balance) == 0 && Objects.equals(number, that.number);
     }
 
     @Override
     public int hashCode() {
-        // return 1; // >> Perde performance, uma vez que todos os objetos estão indo para o mesmo balde,
-        // return (int) (Math.random() * 1000); // >> Duplica elementos, pois objetos iguais não tem o mesmo hashcode
         return Objects.hash(number, balance);
     }
 
@@ -43,4 +47,5 @@ public class AccountFail {
                 '}';
     }
 }
+
 
