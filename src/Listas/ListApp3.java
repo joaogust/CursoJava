@@ -18,7 +18,7 @@ public class ListApp3 {
 
         Iterator<String> iter = list.iterator();
         /*
-        Todos obojetos que armazenam uma série de elementos, como listas, de objetos em java tem o metodo interator que percorre a lista.
+        Todos os objetos que armazenam uma série de elementos, como listas, de objetos em java tem o metodo interator que percorre a lista.
          */
         while (iter.hasNext()) {
             String s = iter.next();
@@ -27,7 +27,7 @@ public class ListApp3 {
                 iter.remove();
                 /*
                 Sem o metodo iterator seria inviavel usar o Enhanced For para apagar elementos de uma lista,
-                haja vista que o indice apontaria para o príximo item e por conta das listas se organizarem
+                haja vista que o índice apontaria para o próximo item e por conta das listas se organizarem
                 um elemento não seria acessado ao percorrer.
                 No caso de um for comum teria que se estabelecer uma lógica para que o elemento seja percorrido.
                 Com o iterator isso não é necessário.
