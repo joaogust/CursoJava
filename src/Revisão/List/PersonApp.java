@@ -17,7 +17,8 @@ public class PersonApp {
         Collections.sort(list);
         System.out.println(list);
 
-        Collections.sort(list, new PersonComparator());
+        // Collections.sort(list, new PersonComparator());
+        list.sort(new PersonComparator());
         System.out.println(list);
     }
 }
