@@ -3,7 +3,7 @@ package DateAndTimeAPIUsosPraticos;
 import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
 
-public class YearMonthApp1 {
+public class YearMonthApp {
 
     public static void main(String[] args) {
 

@@ -2,7 +2,7 @@ package DateAndTimeAPIUsosPraticos;
 
 import java.time.DayOfWeek;
 
-public class DayOfWeekApp1 {
+public class DayOfWeekApp {
 
     public static void main(String[] args) {
 
