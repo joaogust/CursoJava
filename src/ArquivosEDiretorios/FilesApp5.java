@@ -5,7 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 
-public class FileApp5 {
+public class FilesApp5 {
 
     public static void main(String[] args) throws IOException {
 
