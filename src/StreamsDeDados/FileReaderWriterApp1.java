@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-public class FileReaderWriter {
+public class FileReaderWriterApp1 {
 
     public static void main(String[] args) throws IOException {
 
